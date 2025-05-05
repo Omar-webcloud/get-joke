@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">  <title>Random Joke</title>
+</head>
+<body>
+  <h1>Random Joke Generator</h1>
+  <p id="joke">Click the button to get a joke!</p>
+  <div class="btn">
+  <button onclick="getJoke()">Get Joke</button>
+  </div>
+
+  <script>
+    function getJoke() {
+      fetch('https://official-joke-api.appspot.com/random_joke')
+        .then(response => response.json())  // Convert the response to JSON
+        .then(data => {
+          // Use the JSON data to update the page
+          document.getElementById('joke').innerText = data.setup + " - " + data.punchline;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+<footer>
+<p>&copy; 2025 GetJoke. All rights reserved.</p></footer>
+</html>
