@@ -1,0 +1,38 @@
+
+body{
+  font-family: Lora;
+  background-color:#FFFDD0;
+  
+}
+h1{
+  text-align: center;
+  color:#4B3621;
+
+}
+p{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  
+  outline: none;
+  border: transparent;
+  border-radius: 5px;
+  background-color:#3B5323;
+  color:#FFFFF0;
+}
+button:hover{
+  background-color:black;
+  transiton: all ease 0.5s;
+}
+footer{
+margin-top: 120vh;
+  text-align: center;
+  padding: 20px 0;
+}
