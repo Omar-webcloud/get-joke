@@ -7,12 +7,14 @@ body{
 h1{
   text-align: center;
   color:#4B3621;
+font-size: 2rem;
 
 }
 p{
 display: flex;
   align-items: center;
   justify-content: center;
+font-size: 18px;
 }
 .btn{
 display: flex;
@@ -26,13 +28,14 @@ button{
   border-radius: 5px;
   background-color:#3B5323;
   color:#FFFFF0;
+font-size: 18px;
 }
 button:hover{
   background-color:black;
   transiton: all ease 0.5s;
 }
 footer{
-margin-top: 120vh;
+margin-top: 80vh;
   text-align: center;
   padding: 20px 0;
 }
