@@ -1,10 +1,10 @@
-# 😂 Get-Joke
+#  Get-Joke
 
 A fun and simple web app that fetches random jokes from an API and displays them with style.
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 [View the live version here](https://omar-webcloud.github.io/get-joke/)  
 
@@ -20,7 +20,7 @@ A fun and simple web app that fetches random jokes from an API and displays them
 
 ---
 
-## 📦 Features
+##  Features
 
 - Fetches random jokes from a jokes API  
 - Displays the joke with a clean, responsive design  
@@ -29,7 +29,7 @@ A fun and simple web app that fetches random jokes from an API and displays them
 
 ---
 
-## 🧭 How to Use / Run Locally
+##  How to Use / Run Locally
 
 1. Clone this repo  
    ```bash
