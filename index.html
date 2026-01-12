@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">  <title>Random Joke</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Random Joke Generator</h1>
-  <p id="joke">Click the button to get a joke!</p>
-  <div class="btn">
-  <button onclick="getJoke()">Get Joke</button>
-  </div>
-
-  <script>
-    function getJoke() {
-      fetch('https://official-joke-api.appspot.com/random_joke')
-        .then(response => response.json())  // Convert the response to JSON
-        .then(data => {
-          // Use the JSON data to update the page
-          document.getElementById('joke').innerText = data.setup + " - " + data.punchline;
-        })
-        .catch(error => {
-          console.error('Error:', error);
-        });
-    }
-  </script>
+    <main>
+        <div class="container">
+            <h1>Random Joke Generator</h1>
+            <p id="joke">Click the button for a laugh!</p>
+            <div class="btn-container">
+                <button type="button">Get Joke</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 GetJoke. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<footer>
-<p>&copy; 2026 GetJoke. All rights reserved.</p></footer>
 </html>
